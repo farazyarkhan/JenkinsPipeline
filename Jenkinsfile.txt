@@ -15,6 +15,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                git"https://github.com/farazyarkhan/JenkinTest.git"
+                javac hw
+                java Sum
             }
         }
     }
