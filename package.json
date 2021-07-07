@@ -1,0 +1,32 @@
+{
+  "name": "mochatest",
+  "version": "1.0.0",
+  "main": "index",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "description": "Testing to create pipline between jenkins and heroku",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hassan-Leo/JenkinsPipelineProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hassan-Leo/JenkinsPipelineProject/issues"
+  },
+  "homepage": "https://github.com/Hassan-Leo/JenkinsPipelineProject#readme"
+}
