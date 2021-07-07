@@ -2,20 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
+        stage ('Build Stage') {
+            steps   { 
+                bat 'npm config ls'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-               
+        stage ('Testing Stage') {
+            steps   {
+                bat "npm install --dev"
+                bat "npm run test"
             }
         }
     }
