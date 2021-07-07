@@ -6,11 +6,12 @@ chai.should();
 chai.use(chaihttp);
 
 describe("Testing API",()=> {
-    it("Json placeholder APi todo test",(done)=> {
+    it("Project 17B-002-SE Running",(done)=> {
         chai.request("https://jsonplaceholder.typicode.com")
         .get("/todos/1")
         .end((err,resp)=> {
             resp.should.have.status(200);
+            expect(resp.body).to.have.property("userId");
         })
         done();
     })
