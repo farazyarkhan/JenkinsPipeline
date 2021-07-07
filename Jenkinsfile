@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Build Stage') {
             steps   { 
-                bat 'npm config ls'
+                bat "npm config ls"
             }
         }
         stage ('Testing Stage') {
